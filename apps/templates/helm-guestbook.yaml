@@ -16,5 +16,4 @@ spec:
     targetRevision: {{ .Values.spec.source.targetRevision }}
     helm:
       valueFiles:
-      - values.yaml
       - values-production.yaml
