@@ -7,9 +7,9 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: helm-guestbook
+    namespace: hello-gitops-helm-guestbook
     server: {{ .Values.spec.destination.server }}
-  project: default
+  project: funding
   source:
     path: helm-guestbook
     repoURL: {{ .Values.spec.source.repoURL }}

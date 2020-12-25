@@ -7,9 +7,9 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: helm-hooks
+    namespace: hello-gitops-helm-hooks
     server: {{ .Values.spec.destination.server }}
-  project: default
+  project: funding
   source:
     path: helm-hooks
     repoURL: {{ .Values.spec.source.repoURL }}

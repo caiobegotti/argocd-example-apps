@@ -7,9 +7,9 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: kustomize-guestbook
+    namespace: hello-gitops-kustomize-guestbook
     server: {{ .Values.spec.destination.server }}
-  project: default
+  project: funding
   source:
     path: kustomize-guestbook
     repoURL: {{ .Values.spec.source.repoURL }}
